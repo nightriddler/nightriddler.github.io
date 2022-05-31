@@ -1,0 +1,33 @@
+baseURL = 'http://nightriddler.github.io/'
+languageCode = 'ru'
+title = 'Eisenberg'
+theme = "hugo-coder"
+defaultContentLanguage = "ru"
+
+[params]
+author = "MICHAEL EISENBERG"
+#avatarURL = "images/avatar.jpg"
+
+info = ["Python developer"]
+
+#[languages.ru]
+#languageName = ":ru:"
+
+[[params.social]]
+name = "Github"
+icon = "fa fa-2x fa-github"
+weight = 1
+url = "https://github.com/nightriddler/"
+
+
+
+[[languages.ru.menu.main]]
+name = "О себе"
+weight = 1
+url = "about/"
+
+
+[[languages.ru.menu.main]]
+name = "Проекты"
+weight = 2
+url = "projects/"
