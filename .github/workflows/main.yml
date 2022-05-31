@@ -23,8 +23,8 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          BRANCH: master
-          FOLDER: public
+          github_token: ${{ secrets.TOKEN }}
+          publish_dir: ./public
